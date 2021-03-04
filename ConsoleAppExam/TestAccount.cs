@@ -10,6 +10,8 @@ namespace ConsoleAppExam
 
         public void Deposite(decimal ammount) { }
 
+
+
         public decimal withdraw(decimal ammount)
         {
             return 0m;
