@@ -15,6 +15,7 @@ namespace ConsoleAppExam
             ATM.instance.Insert(card);
             ATM.instance.SelectAccount(_account);
             ATM.instance.withdraw(400);
+
            /* Console.WriteLine($"Current Balance is {_account.Balance}");
 
             try
