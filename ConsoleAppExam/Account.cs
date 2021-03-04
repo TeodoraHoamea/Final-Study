@@ -19,7 +19,7 @@ namespace ConsoleAppExam
             ammount = ammount + fee;
             if(Balance < ammount)
             {
-                throw new InvalidOperationException();
+                throw new InvalidOperationException("Insufficient funds!!! ");
             }
             else
             {
