@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ConsoleAppExam
 {
-    public abstract class Account
+    public abstract class Account : IAccount
     {
         public decimal Balance { get; private set; }
 
@@ -17,7 +17,7 @@ namespace ConsoleAppExam
         {
             var fee = CalculateWithDraw(ammount);
             ammount = ammount + fee;
-            if(Balance < ammount)
+            if (Balance < ammount)
             {
                 throw new InvalidOperationException("Insufficient funds!!! ");
             }
