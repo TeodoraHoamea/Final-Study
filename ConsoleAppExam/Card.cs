@@ -6,6 +6,9 @@ namespace ConsoleAppExam
 {
     public class Card
     {   
+
+
+
         public Card(string cardHolder)
         {
             Holder = cardHolder;
