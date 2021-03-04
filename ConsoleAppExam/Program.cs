@@ -9,7 +9,13 @@ namespace ConsoleAppExam
         {
             var _account = new SavingsAccount();
             _account.Deposite(600);
-            Console.WriteLine($"Current Balance is {_account.Balance}");
+
+            var card = new Card("Nume Random");
+            card.AddAccount(_account);
+            ATM.instance.Insert(card);
+            ATM.instance.SelectAccount(_account);
+            ATM.instance.withdraw(400);
+           /* Console.WriteLine($"Current Balance is {_account.Balance}");
 
             try
             {
@@ -18,7 +24,7 @@ namespace ConsoleAppExam
             {
                 Console.WriteLine(ex.Message);
             }
-            Console.WriteLine($"Current Balance is {_account.Balance}");
+            Console.WriteLine($"Current Balance is {_account.Balance}");*/
         }
     }
 }
